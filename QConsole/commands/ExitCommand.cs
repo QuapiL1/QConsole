@@ -15,7 +15,7 @@ namespace QConsole.commands
 
         public override void Run(string[] args)
         {
-            Program.SetRunning(false);
+            QConsole.SetRunning(false);
         }
     }
 }

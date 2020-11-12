@@ -8,7 +8,7 @@ using QConsole.commands;
 
 namespace QConsole
 {
-    class Program
+    class QConsole
     {
         private static Dictionary<string, Command> commands = new Dictionary<string, Command>();
         private static bool running = true;

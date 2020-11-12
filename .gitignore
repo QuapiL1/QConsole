@@ -10,3 +10,4 @@ QConsole/obj/Debug/QConsole.exe
 QConsole/obj/Debug/QConsole.csproj.FileListAbsolute.txt
 .vs/QConsole/v16/.suo
 .vs/QConsole/v16/.suo
+*.cache

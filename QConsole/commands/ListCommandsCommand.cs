@@ -18,9 +18,9 @@ namespace QConsole.commands
         {
             StringBuilder stringBuilder = new StringBuilder("Commands: \n");
             Command command;
-            foreach (string cmdString in Program.GetCommands().Keys)
+            foreach (string cmdString in QConsole.GetCommands().Keys)
             {
-                command = Program.GetCommands()[cmdString];
+                command = QConsole.GetCommands()[cmdString];
                 stringBuilder.AppendLine($" • {cmdString}: {command.GetName()}");
             }
             Console.WriteLine(stringBuilder.ToString());

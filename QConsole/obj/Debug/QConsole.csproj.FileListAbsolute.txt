@@ -1,7 +1,0 @@
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\bin\Debug\QConsole.exe.config
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\bin\Debug\QConsole.exe
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\bin\Debug\QConsole.pdb
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\obj\Debug\QConsole.csprojAssemblyReference.cache
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\obj\Debug\QConsole.csproj.CoreCompileInputs.cache
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\obj\Debug\QConsole.exe
-E:\Yarin\Projects\ConsoleApplications\QConsole\QConsole\obj\Debug\QConsole.pdb

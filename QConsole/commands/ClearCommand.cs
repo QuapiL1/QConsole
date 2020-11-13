@@ -7,7 +7,7 @@ using QConsole.classes;
 
 namespace QConsole.commands
 {
-    class ClearCommand : classes.Command
+    class ClearCommand : Command
     {
         public ClearCommand(string name)
         {

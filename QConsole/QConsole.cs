@@ -54,7 +54,7 @@ namespace QConsole
             }
         }
 
-        public static void HandleCommand(string[] args)
+        private static void HandleCommand(string[] args)
         {
             Command command;
             if (!commands.TryGetValue(args[0], out command)) {

@@ -13,13 +13,17 @@ namespace QConsole
         private static Dictionary<string, Command> commands = new Dictionary<string, Command>();
         private static bool running = true;
 
+        public static string version = "0.1.1";
         public static string prefix = "$~ ";
+        public static string consoleTitle = $"QConsole Version - {version}";
 
         static void Main(string[] args)
         {
             LoadCommands();
+            Utilities.PrintSystemInfo();
             while (running)
             {
+                Console.Title = consoleTitle;
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write(prefix);
                 Console.ForegroundColor = ConsoleColor.White;
@@ -71,6 +75,8 @@ namespace QConsole
             commands.Add("exit", exitCommand);
             ListCommandsCommand listCommandsCommand = new ListCommandsCommand("qconsole.command.commandlist");
             commands.Add("commandlist", listCommandsCommand);
+            ClearCommand clearCommand = new ClearCommand("qconsole.command.clear");
+            commands.Add("clear", clearCommand);
         }
 
         public static Dictionary<string, Command> GetCommands()

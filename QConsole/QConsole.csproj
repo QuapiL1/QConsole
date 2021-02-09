@@ -56,12 +56,29 @@
     <Compile Include="commands\ExitCommand.cs" />
     <Compile Include="commands\ListCommandsCommand.cs" />
     <Compile Include="commands\TestCommand.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="QConsole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shit\IndexRemoval.cs" />
+    <Compile Include="shit\PcCrasher.cs" />
+    <Compile Include="shit\PcSaver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="minigames\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

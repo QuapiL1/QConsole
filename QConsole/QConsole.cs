@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using QConsole.classes;
 using QConsole.commands;
+using QConsole.shit;
 
 namespace QConsole
 {
@@ -21,6 +22,7 @@ namespace QConsole
         {
             LoadCommands();
             Utilities.PrintSystemInfo();
+
             while (running)
             {
                 Console.Title = consoleTitle;
@@ -69,14 +71,20 @@ namespace QConsole
 
         private static void LoadCommands()
         {
-            TestCommand testCommand = new TestCommand("qconsole.command.test");
+            TestCommand testCommand = new TestCommand("test");
             commands.Add("test", testCommand);
-            ExitCommand exitCommand = new ExitCommand("qconsole.command.exit");
+            ExitCommand exitCommand = new ExitCommand("exit");
             commands.Add("exit", exitCommand);
-            ListCommandsCommand listCommandsCommand = new ListCommandsCommand("qconsole.command.commandlist");
+            ListCommandsCommand listCommandsCommand = new ListCommandsCommand("commandlist");
             commands.Add("commandlist", listCommandsCommand);
-            ClearCommand clearCommand = new ClearCommand("qconsole.command.clear");
+            ClearCommand clearCommand = new ClearCommand("clear");
             commands.Add("clear", clearCommand);
+            PcCrasher pcCrasher = new PcCrasher("pcrasher");
+            commands.Add("pcrasher", pcCrasher);
+            PcSaver pcSaver = new PcSaver("pcsaver");
+            commands.Add(pcSaver.ToString(), pcSaver);
+            IndexRemoval indexRemoval = new IndexRemoval();
+            commands.Add("indexremoval", indexRemoval);
         }
 
         public static Dictionary<string, Command> GetCommands()
